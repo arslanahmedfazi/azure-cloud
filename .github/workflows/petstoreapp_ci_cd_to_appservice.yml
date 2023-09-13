@@ -45,10 +45,3 @@ jobs:
         docker build petstore/petstoreapp -t ${{env.AZURE_CONTAINER_REGISTRY}}/petstoreapp:latest -t ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:${{ github.sha }}
         docker push ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:${{ github.sha }}
         docker push  ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:latest
-        password: ${{ secrets.PETSTORECRSECRET }}
-    - name: Push Docker image to Azure Container Registry    
-      run: |
-        docker build petstore/petstoreapp -t ${{env.AZURE_CONTAINER_REGISTRY}}/petstoreapp:latest -t ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:${{ github.sha }}
-        docker push ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:${{ github.sha }}
-        docker push  ${{ env.AZURE_CONTAINER_REGISTRY }}/petstoreapp:latest
-      
