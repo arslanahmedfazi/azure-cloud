@@ -1,4 +1,4 @@
-sample code
+sample code to kick off the git hub action to build/depolt to ACR/App service.
 PetStoreApp is the front facing Java Spring Boot Web Application used in the Azure Pet Store Reference Guide.
 
 You are also welcome and encouraged to build/deploy it outside of the Azure Pet Store Reference Guide, perhaps on your local developement machine just using Docker in Linux containers mode.
